@@ -25,5 +25,5 @@ arrow_left.addEventListener("click",function(){
 })
 
 arrow_right.addEventListener("click",function(){
-	console.log("il y a eu un click")	
+	console.log("il y a eu un click") 	
 })
