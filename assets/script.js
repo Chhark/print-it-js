@@ -22,6 +22,8 @@ let banner_img = document.querySelector(".banner-img")
 banner_img.src = './assets/images/slideshow/slide1.jpg'
 let i = 0
 let current_slide = i
+let text_slider = document.getElementById('textslider')
+text_slider.innerHTML = slides[current_slide].tagLine
 let arrow_left = document.querySelector(".arrow_left")
 let arrow_right = document.querySelector(".arrow_right")
 
@@ -45,6 +47,7 @@ function slider (p_n ,max , min){
 	current_dot.classList.add('dot_selected')
 	prev_dot.classList.remove('dot_selected')
 	banner_img.src = './assets/images/slideshow/' + slides[current_slide].image
+	text_slider.innerHTML = slides[current_slide].tagLine
 	console.log(current_slide)
 
 } 
